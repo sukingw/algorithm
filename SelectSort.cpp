@@ -17,7 +17,7 @@ using namespace std;
 void SelectSort(vector<int> &a){
     int i,j;
     int min;
-    for(i=0;i<a.size();++i){
+    for(i=0;i<a.size()-1;++i){
         min = i;
         for(j = i+1; j< a.size();++j ){
             if(a[min]>a[j]){
