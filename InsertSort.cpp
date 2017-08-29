@@ -17,7 +17,7 @@ void SelectSort(vector<int> &a){
     for(i=1;i < a.size();++i){
         if(a[i]<a[i-1]){
             temp = a[i];
-            for(j=i;a[j-1]>temp && j > 0;--j){
+            for(j=i;a[j-1]>temp && j >= 0;--j){
                 a[j] = a[j-1];
             }
             a[j] = temp;
